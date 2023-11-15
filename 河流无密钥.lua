@@ -152,5 +152,18 @@ About:AddButton({
     setclipboard("587185906")
   end
 })
+
+About:AddButton({
+	Name = "河流工具箱-脚本",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	        Name = "正在启动(河流工具箱)",
+            Content = "正 在 加 载 河 流 工 具 箱 (启动中耐心等待)",
+            Image = "rbxassetid://13317101016",
+            Time = 8
+        })
+      	loadstring(game:HttpGet("https://pastebin.com/raw/2frP15Mh"))()
+  	end
+})
  
 OrionLib:Init()
